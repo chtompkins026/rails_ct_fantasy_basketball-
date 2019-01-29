@@ -20,8 +20,8 @@
 </ul>
 
 <% if admin_only%>
-  <%= button_tag "Create League", create_league_path %>
-  <%= button_tag "Create Team", create_team_path%>
+  <%= link_to "New League", new_league_path %>
+  <%= link_to "Join League", join_league_path %>
 <% else %>
   <%= link_to "Join League", join_league_path %>
 <% end %>
