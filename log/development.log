@@ -752,3 +752,49 @@ Migrating to RemoveUserIdFromPlayers (20190129000510)
   [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "players" ("name", "position", "nba_team", "points", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Kemba Walker"], ["position", "SG"], ["nba_team", "Charlotte Hornets"], ["points", 49], ["team_id", 1], ["created_at", "2019-01-29 01:23:57.625753"], ["updated_at", "2019-01-29 01:23:57.625753"]]
   [1m[35m (1.5ms)[0m  commit transaction
   [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mLeague Load (0.4ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "leagues" WHERE "leagues"."id" = ?  [["id", 1]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mTeam Load (1.0ms)[0m  SELECT "teams".* FROM "teams"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "teams" WHERE "teams"."id" = ?  [["id", 1]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mPlayer Load (0.8ms)[0m  SELECT "players".* FROM "players"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  DELETE FROM "players" WHERE "players"."id" = ?  [["id", 1]]
+  [1m[36m (17.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "players" WHERE "players"."id" = ?[0m  [["id", 2]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mLeague Exists (0.2ms)[0m  SELECT  1 AS one FROM "leagues" WHERE "leagues"."name" = 'Awesome League' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "leagues" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Awesome League"], ["created_at", "2019-01-29 02:46:14.956066"], ["updated_at", "2019-01-29 02:46:14.956066"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'chtompkins026@gmail.com' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Chris' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "password_digest", "email", "admin", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Chris"], ["password_digest", "$2a$10$SlI9VCtGuPiNynJtfJmBwe8lItyYD3f0TTlmk6fNrEj52IHL1hpSu"], ["email", "chtompkins026@gmail.com"], ["admin", "t"], ["created_at", "2019-01-29 02:46:15.039265"], ["updated_at", "2019-01-29 02:46:15.039265"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeam Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = 'Team Alex' LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "teams" ("name", "total_points", "user_id", "league_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Team Alex"], ["total_points", 1120], ["user_id", 2], ["league_id", 2], ["created_at", "2019-01-29 02:46:15.054470"], ["updated_at", "2019-01-29 02:46:15.054470"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mPlayer Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "players" WHERE ("players"."name" = 'James Harden' AND "players"."team_id" = 2) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "players" ("name", "position", "nba_team", "points", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "James Harden"], ["position", "PG"], ["nba_team", "Houston Rockets"], ["points", 100], ["team_id", 2], ["created_at", "2019-01-29 02:46:15.062110"], ["updated_at", "2019-01-29 02:46:15.062110"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mPlayer Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "players" WHERE ("players"."name" = 'Kemba Walker' AND "players"."team_id" = 2) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "players" ("name", "position", "nba_team", "points", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Kemba Walker"], ["position", "SG"], ["nba_team", "Charlotte Hornets"], ["points", 49], ["team_id", 2], ["created_at", "2019-01-29 02:46:15.069923"], ["updated_at", "2019-01-29 02:46:15.069923"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mTeam Load (0.6ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mLeague Load (0.2ms)[0m  SELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?  [["user_id", 2]]
