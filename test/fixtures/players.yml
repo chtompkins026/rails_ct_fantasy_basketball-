@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  position: MyString
+  team: MyString
+  points: 1
+  team_id: 1
+  user_id: 1
+  league_id: 1
+
+two:
+  name: MyString
+  position: MyString
+  team: MyString
+  points: 1
+  team_id: 1
+  user_id: 1
+  league_id: 1
