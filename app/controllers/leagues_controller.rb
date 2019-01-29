@@ -8,6 +8,10 @@ class LeaguesController < ApplicationController
     end
   end
 
+  def edit
+    @league = League.find(params[:id])
+  end
+
   def new
 
   end
@@ -22,10 +26,23 @@ class LeaguesController < ApplicationController
   end
 
   def update
+    @league = League.find(params[:id])
+    @league.update(league_params)
+    if @league.save
+      redirect_to league_path(@league)
+    else
+      render :edit
+    end
   end
 
   def destroy
 
+  end
+
+  private
+
+  def league_params
+    params.require(:league).permit(:name)
   end
 
 end
