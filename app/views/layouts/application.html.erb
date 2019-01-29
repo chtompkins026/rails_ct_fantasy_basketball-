@@ -8,6 +8,29 @@
 </head>
 <body>
 
+  <nav>
+    <ul class="main_navbar">
+      <li id="main_navbar_li"><a href="/">Home</a></li>
+      <% if logged_in? %>
+        <% @user = current_user%>
+        <li id ="main_navbar_li"><a href="/users/<%=@user.id%>"> My Team </a> </li>
+        <li id ="main_navbar_li"><a href="/logout"> Logout </a></li>
+      <% else %>
+        <li id="main_navbar_li"><a href="/login">Log In</a></li>
+        <li id="main_navbar_li"><a href="/signup">Sign Up</a></li>
+      <%end%>
+    </ul>
+  </nav>
+
+
+  <div class="flash_container">
+    <% if flash[:error]%>
+        <h4 class="flash"> <%=flash[:error]%> </h4>
+    <% elsif flash[:success] %>
+      <h4 class="special-flash"> <%=flash[:success]%> </h4>
+    <% end %>
+  </div>
+
 <%= yield %>
 
 </body>

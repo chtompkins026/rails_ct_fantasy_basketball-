@@ -1,11 +1,22 @@
-<h1>Hi, <%= @user.name %>!</h1>
+<h1>Hi, <%= @user.name%>!</h1>
 
-<h3>Here are your leagues</h3>
-  <%= @user.leagues.each do |l| %>
-    <p> <%= link_to "League", l %> </p>
+<h3>Here are your leagues: </h3>
+<ul>
+  <% @user.leagues.each do |l| %>
+    <li> <%= link_to "#{l.name}", l  %> </li>
   <% end %>
+</ul>
 
-<h3> Here are your teams </h3>
-  <%= @user.teams.each do |t| %>
-    <p> <%= link_to "Team", t %> </p>
+<h3> Here are your teams:</h3>
+<ul>
+  <% @user.teams.each do |t| %>
+    <li> <%= link_to "#{t.name}", t %> </li>
   <% end %>
+</ul>
+
+<% if admin_only%>
+  <%= button_tag "Create League", create_league_path %>
+  <%= button_tag "Create Team", create_team_path%>
+<% else %>
+  <%= link_to "Join League", '#' %>
+<% end %>

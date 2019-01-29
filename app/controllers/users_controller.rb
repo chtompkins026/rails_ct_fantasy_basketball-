@@ -1,28 +1,9 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: [:update, :destroy]
 
   def new
     @user = User.new
   end
-
-  # def create
-  #   @user = User.new
-  #   @user.name= params[:user][:name]
-  #   @user.password = params[:user][:password]
-  #   @user.email = params[:user][:email]
-  #
-  #   if params[:user][:admin].to_i == 1
-  #     @user.admin = true
-  #   else
-  #     @user.admin = false
-  #   end
-  #
-  #   if @user.save
-  #     session[:user_id] = @user.id
-  #     redirect_to user_path(@user)
-  #   else
-  #     render '/users/new'
-  #   end
-  # end
 
   def create
     @user = User.new(user_params)
@@ -31,6 +12,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
+      flash[:error] = "#{@user.errors.full_messages.join(". ")}"
       render 'new'
     end
   end
@@ -44,9 +26,13 @@ class UsersController < ApplicationController
   end
 
   def update
-    user = User.find(params[:id])
-    user.update(name: params[:name], password: params[:password], params[:email])
-    user.save
+    @user.update(name: params[:name], password: params[:password], email: params[:email])
+    @user.save
+  end
+
+  def destroy
+    session[:user_id] = nil
+    @user.destroy
   end
 
 
@@ -54,7 +40,7 @@ private
 
   def set_user
       @user = User.find(params[:id])
-    end
+  end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params

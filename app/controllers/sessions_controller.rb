@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
 
   def new
+    @user = User.new
   end
 
   def create
@@ -15,5 +16,10 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    if logged_in?
+      session[:user_id] = nil
+      redirect_to root_path
+    end
   end
-end
+
+end #end of controller
