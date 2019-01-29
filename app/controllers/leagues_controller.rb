@@ -1,5 +1,9 @@
 class LeaguesController < ApplicationController
 
+  def new
+    @league = League.new
+  end
+
   def index
     @leagues = League.all
 
@@ -12,12 +16,13 @@ class LeaguesController < ApplicationController
     @league = League.find(params[:id])
   end
 
-  def new
-
-  end
-
   def create
-
+    @league = League.create(league_params)
+    if @league
+      redirect_to league_path(@league)
+    else
+      render :new
+    end
   end
 
   def show
