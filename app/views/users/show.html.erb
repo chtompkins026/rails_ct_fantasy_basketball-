@@ -3,14 +3,19 @@
 <h3>Here are your leagues: </h3>
 <ul>
   <% @user.leagues.each do |l| %>
+  <% unless @user.admin %>
     <li> <%= link_to "#{l.name}", l  %> </li>
+    <% else %>
+    <li> <%= link_to "#{l.name}", l  %> -
+      <%= link_to "Edit League", edit_league_path(l)%> </li>
+    <% end %>
   <% end %>
 </ul>
 
 <h3> Here are your teams:</h3>
 <ul>
   <% @user.teams.each do |t| %>
-    <li> <%= link_to "#{t.name}", t %> </li>
+    <li> <%= link_to "#{t.name}", t %> - <%= link_to "Edit Team", edit_team_path(t) %> </li>
   <% end %>
 </ul>
 
@@ -18,5 +23,5 @@
   <%= button_tag "Create League", create_league_path %>
   <%= button_tag "Create Team", create_team_path%>
 <% else %>
-  <%= link_to "Join League", '#' %>
+  <%= link_to "Join League", join_league_path %>
 <% end %>

@@ -14,7 +14,7 @@
 
       <% if logged_in? %>
         <% @user = current_user%>
-        <li id ="main_navbar_li"><a href="/users/<%=@user.id%>"> My Team </a> </li>
+        <li id ="main_navbar_li"><a href="/users/<%=@user.id%>"> My Fantasy Page </a> </li>
         <li id ="main_navbar_li"><a href="/logout"> Logout </a></li>
       <% else %>
         <li id="main_navbar_li"><a href="/login">Log In</a></li>

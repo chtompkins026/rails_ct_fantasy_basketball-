@@ -1,0 +1,8 @@
+<h1> Welcome to the <%= @league.name %> page</h1>
+
+<h3> Here are all the teams currently in your league: </h3>
+  <ul>
+    <% @teams.each do |t| %>
+      <li> <%= link_to "#{t.name}", t  %> - <%= t.user.name %> </li>
+    <% end %>
+  </ul>
