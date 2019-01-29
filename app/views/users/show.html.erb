@@ -1,11 +1,11 @@
 <h1>Hi, <%= @user.name %>!</h1>
 
-<h3>Here are yours and leagues</h3>
+<h3>Here are your leagues</h3>
+  <%= @user.leagues.each do |l| %>
+    <p> <%= link_to "League", l %> </p>
+  <% end %>
 
-<p>Mood: <%= @user.mood %></p>
-<p>Tickets: <%= @user.tickets %></p>
-<p>Height: <%= @user.height %></p>
-<p>ADMIN: <%= @user.admin %></p>
-
-<%= link_to "See attractions", attractions_url %>
-<%= link_to "Log Out", logout_url %>
+<h3> Here are your teams </h3>
+  <%= @user.teams.each do |t| %>
+    <p> <%= link_to "Team", t %> </p>
+  <% end %>

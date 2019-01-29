@@ -4,23 +4,34 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  # def create
+  #   @user = User.new
+  #   @user.name= params[:user][:name]
+  #   @user.password = params[:user][:password]
+  #   @user.email = params[:user][:email]
+  #
+  #   if params[:user][:admin].to_i == 1
+  #     @user.admin = true
+  #   else
+  #     @user.admin = false
+  #   end
+  #
+  #   if @user.save
+  #     session[:user_id] = @user.id
+  #     redirect_to user_path(@user)
+  #   else
+  #     render '/users/new'
+  #   end
+  # end
+
   def create
-    @user = User.new
-    @user.name= params[:user][:name]
-    @user.password = params[:user][:password]
-    @user.email = params[:user][:email]
-
-    if params[:user][:admin].to_i == 1
-      @user.admin = true
-    else
-      @user.admin = false
-    end
-
+    @user = User.new(user_params)
     if @user.save
-      session[:user_id] = @user.id
-      redirect_to user_path(@user)
+      log_in @user
+      flash[:success] = "Welcome to the Sample App!"
+      redirect_to @user
     else
-      render '/users/new'
+      render 'new'
     end
   end
 
