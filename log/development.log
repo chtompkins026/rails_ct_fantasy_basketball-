@@ -8804,3 +8804,59 @@ Processing by TeamsController#show as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
 Completed 200 OK in 68ms (Views: 64.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/leagues/2" for ::1 at 2019-01-30 18:39:13 -0500
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLeague Load (1.1ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mTeam Load (0.3ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 2]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered leagues/show.html.erb within layouts/application (16.5ms)
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 178ms (Views: 141.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/teams/5" for ::1 at 2019-01-30 18:39:16 -0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTeam Load (0.2ms)[0m  SELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mLeague Load (0.1ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" WHERE "players"."team_id" = ?  [["team_id", 5]]
+  Rendered teams/show.html.erb within layouts/application (5.3ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 75ms (Views: 72.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/teams/5" for ::1 at 2019-01-30 18:47:03 -0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mLeague Load (0.2ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."team_id" = ?[0m  [["team_id", 5]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered teams/show.html.erb within layouts/application (66.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 170ms (Views: 163.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/players" for ::1 at 2019-01-30 18:47:06 -0500
+Processing by PlayersController#index as HTML
+  Rendered players/index.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.4ms)

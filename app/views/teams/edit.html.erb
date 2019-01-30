@@ -1,2 +1,10 @@
-<h1>Teams#edit</h1>
-<p>Find me in app/views/teams/edit.html.erb</p>
+<h2> Edit your team name here: </h2>
+
+<%= form_for(@team) do |t| %>
+  <%= t.hidden_field :league_id, value:@team.league_id %>
+  <%= t.hidden_field :user_id, value:session[:user_id] %>
+  <%= t.label :name %>
+  <%= t.text_field :name %>
+
+  <%= t.submit %>
+<% end %>
