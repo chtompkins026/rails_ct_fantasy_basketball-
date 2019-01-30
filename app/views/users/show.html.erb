@@ -1,26 +1,13 @@
 <h1>Hi, <%= @user.name%>!</h1>
 
-<h3>Here are your leagues: </h3>
-<ul>
-  <% @user.leagues.each do |l| %>
-  <% unless @user.admin %>
-    <li> <%= link_to "#{l.name}", l  %> </li>
-    <% else %>
-    <li> <%= link_to "#{l.name}", l  %> -
-      <%= link_to "Edit League", edit_league_path(l)%> </li>
-    <% end %>
-  <% end %>
-</ul>
-
-<h3> Here are your teams:</h3>
-<ul>
-  <% @user.teams.each do |t| %>
-    <li> <%= link_to "#{t.name}", t %> - <%= link_to "Edit Team", edit_team_path(t) %> </li>
-  <% end %>
-</ul>
+<% if admin_only %>
+  <%= render 'table2' %>
+<%else%>
+  <%= render 'table1' %>
+<%end %>
 
 <% if admin_only%>
-  <%= link_to "New League", new_league_path %> <br> <br>  
+  <%= link_to "New League", new_league_path %> <br> <br>
   <%= link_to "Join League", join_league_path %>
 <% else %>
   <%= link_to "Join League", join_league_path %>

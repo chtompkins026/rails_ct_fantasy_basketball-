@@ -1,5 +1,24 @@
-<ol>
- <% @leagues.each do |l| %>
-  <li> <%= link_to "#{l.name}", l  %> - <%= link_to "Join League", join_a_league_path(l.id) %> </li>
- <% end %>
-</ol>
+<h1> Welcome! Below are the leagues available</h1>
+<p> Click join to submit your team name and compete against the best </p>
+
+<table class="table table-hover players">
+  <thead>
+    <tr>
+      <th> No. </th>
+      <th> League Name</th>
+      <th> Current # of Teams</th>
+      <th> Join League </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @leagues.each_with_index do |l, index| %>
+      <tr>
+        <td> <%= index + 1%> </td>
+        <td> <%= link_to "#{l.name}", l  %> </td>
+        <td> <%= l.teams.count %> </td>
+        <td> <%= link_to "Join", join_a_league_path(l.id) %> </td>
+      </tr>
+    <%end%>
+  </tbody>
+</table>

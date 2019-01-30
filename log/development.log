@@ -7647,3 +7647,1160 @@ Processing by LeaguesController#edit as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
   [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
 Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/leagues/2/edit" for ::1 at 2019-01-30 17:14:46 -0500
+Processing by LeaguesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLeague Load (0.4ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered leagues/edit.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 89ms (Views: 87.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/leagues/2/edit" for ::1 at 2019-01-30 17:15:09 -0500
+Processing by LeaguesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLeague Load (0.4ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered leagues/edit.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Exists (1.6ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 72ms (Views: 67.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/leagues/2/edit" for ::1 at 2019-01-30 17:15:16 -0500
+Processing by LeaguesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered leagues/edit.html.erb within layouts/application (4.2ms)
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/leagues/2/edit" for ::1 at 2019-01-30 17:15:22 -0500
+Processing by LeaguesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLeague Load (0.2ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered leagues/edit.html.erb within layouts/application (8.2ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 101ms (Views: 98.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/leagues/2/edit" for ::1 at 2019-01-30 17:15:27 -0500
+Processing by LeaguesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLeague Load (1.0ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered leagues/edit.html.erb within layouts/application (4.2ms)
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 80ms (Views: 77.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 17:15:35 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mLeague Load (0.1ms)[0m  [1mSELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (5.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 17:16:08 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.2ms)[0m  SELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (8.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams/5" for ::1 at 2019-01-30 17:16:21 -0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTeam Load (0.2ms)[0m  SELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" WHERE "players"."team_id" = ?  [["team_id", 5]]
+  Rendered teams/show.html.erb within layouts/application (26.8ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/teams/8" for ::1 at 2019-01-30 17:16:28 -0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mLeague Load (0.1ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPlayer Load (0.2ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."team_id" = ?[0m  [["team_id", 8]]
+  Rendered teams/show.html.erb within layouts/application (2.4ms)
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/teams/8" for ::1 at 2019-01-30 17:16:32 -0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mTeam Load (0.3ms)[0m  SELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mPlayer Load (0.1ms)[0m  SELECT "players".* FROM "players" WHERE "players"."team_id" = ?  [["team_id", 8]]
+  Rendered teams/show.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:20:19 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.5ms)[0m  SELECT "leagues".* FROM "leagues"
+  Rendered leagues/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 85ms (Views: 79.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:20:34 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.4ms)[0m  SELECT "leagues".* FROM "leagues"
+  Rendered leagues/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 75ms (Views: 72.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:25:17 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (1.7ms)[0m  SELECT "leagues".* FROM "leagues"
+  Rendered leagues/index.html.erb within layouts/application (254.4ms)
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 2.6ms)
+
+ActionView::Template::Error (undefined local variable or method `player' for #<#<Class:0x007fcb006d9a20>:0x007fcb044b60f0>
+Did you mean?  player_url):
+    13:           <tr>
+    14:             <td> <%= index + 1%> </td>
+    15:             <td> <<%= link_to "#{l.name}", l  %> </td>
+    16:             <td> <%= player.nba_team %>  </td>
+    17:             <td> <%= l.teams.count %> </td>
+    18:             <td> <%= link_to "Join", join_a_league_path(l.id) %> </td>
+    19:           </tr>
+  app/views/leagues/index.html.erb:16:in `block in _app_views_leagues_index_html_erb___1282552264935138379_70254963565960'
+  app/views/leagues/index.html.erb:12:in `_app_views_leagues_index_html_erb___1282552264935138379_70254963565960'
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (129.1ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (106.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (248.7ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:25:33 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (19.8ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 119ms (Views: 114.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:26:03 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.4ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (3.1ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (14.0ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 113ms (Views: 108.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:26:33 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (13.7ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 17:27:10 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.4ms)[0m  SELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (11.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 60ms (Views: 57.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 17:29:24 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mLeague Load (0.3ms)[0m  [1mSELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mTeam Load (0.3ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (10.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 152ms (Views: 147.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-add05c3191d19c3b0c96203f735df3a94e9462c57b50dc2560039ba3b1b37728.css?body=1" for ::1 at 2019-01-30 17:29:24 -0500
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 17:31:06 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (14.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 112ms (Views: 108.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-593cc4e04a387167380c3826b0ec377c52edd37afeb892a408df68c7d770a28b.css?body=1" for ::1 at 2019-01-30 17:31:06 -0500
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 17:31:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mTeam Load (0.2ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (8.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:31:14 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 81ms (Views: 79.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:33:01 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (26.0ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 217ms (Views: 211.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-06199d471015200f6c9b14b9d080ee72c83284f2deb516d38e1287f7eca64398.css?body=1" for ::1 at 2019-01-30 17:33:02 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:33:38 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (2.6ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (18.9ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 173ms (Views: 166.5ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.self-3d7035ccd843c8f5713b8ef8c8769f10a472ff73a5af1bf8ad5cdfb3f3b8680f.css?body=1" for ::1 at 2019-01-30 17:33:38 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:34:44 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (2.1ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (11.2ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 164ms (Views: 158.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:36:19 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (47.7ms)
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 217ms (Views: 214.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-644c413bd19d04f58de80e618f4ce90590f1246cc4b97a5265a7a132a7c9342a.css?body=1" for ::1 at 2019-01-30 17:36:19 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:36:25 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.7ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (8.9ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 184ms (Views: 179.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.self-f824c6d227753c7a03ff3d3a02ad4ceb963b82440f77bbff71bf355a357c4d26.css?body=1" for ::1 at 2019-01-30 17:36:25 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:36:30 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.7ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (10.1ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 159ms (Views: 155.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-1097f0c37d1c8b6d94b056ecc4e5dee59cc0cb4b7ce2a6314857dbe6d1bc5f1e.css?body=1" for ::1 at 2019-01-30 17:36:30 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:36:36 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (5.9ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 133ms (Views: 130.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.self-78010923148107fde6bdf99329e823c3f508d6e58939ab313375f2e8835b9470.css?body=1" for ::1 at 2019-01-30 17:36:36 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:36:49 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.5ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 189ms (Views: 186.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-27de7e86805d798e469870048f16ab7c053826e39fef4e0ccbf0fc9cc8e26112.css?body=1" for ::1 at 2019-01-30 17:36:49 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:37:25 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (12.4ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 162ms (Views: 157.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.self-ccdcc59e80aa655ea744b5d24d172016b86d97b2e6014dfc6d3d2bb189792795.css?body=1" for ::1 at 2019-01-30 17:37:25 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:37:30 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 227ms (Views: 220.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.self-7901c43c09adfba7f44137fdcdc96706bbf8fad45601b474e761f545511e16a3.css?body=1" for ::1 at 2019-01-30 17:37:31 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:37:54 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 77ms (Views: 74.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-c080d30fdb1bfbcc366ced32f5347cc6fb5091ebf780405478ae5565f7a539b4.css?body=1" for ::1 at 2019-01-30 17:37:54 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:38:20 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.2ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 67ms (Views: 64.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-6f4a7ea0bc261978ca9206722fa90b44988fc808f56cf0423c9b1f433421ded2.css?body=1" for ::1 at 2019-01-30 17:38:20 -0500
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:43:00 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (1.7ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (19.3ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 102ms (Views: 96.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:43:32 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (1.2ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (17.1ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 109ms (Views: 105.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:43:39 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (12.2ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 107ms (Views: 103.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:43:41 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 72ms (Views: 70.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/join_league" for ::1 at 2019-01-30 17:43:48 -0500
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (1.0ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  Rendered leagues/index.html.erb within layouts/application (8.7ms)
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 102ms (Views: 95.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2019-01-30 17:43:55 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (15.5ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 74ms (Views: 72.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 17:44:01 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.2ms)[0m  SELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (16.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 82ms (Views: 79.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/leagues/3" for ::1 at 2019-01-30 17:49:55 -0500
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mLeague Load (0.2ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered leagues/show.html.erb within layouts/application (10.0ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 83ms (Views: 76.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/teams/8" for ::1 at 2019-01-30 17:50:00 -0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mLeague Load (0.1ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mPlayer Load (0.1ms)[0m  [1mSELECT "players".* FROM "players" WHERE "players"."team_id" = ?[0m  [["team_id", 8]]
+  Rendered teams/show.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 125ms (Views: 121.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/teams/8" for ::1 at 2019-01-30 17:50:05 -0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mTeam Load (0.2ms)[0m  SELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mPlayer Load (0.9ms)[0m  SELECT "players".* FROM "players" WHERE "players"."team_id" = ?  [["team_id", 8]]
+  Rendered teams/show.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 81ms (Views: 77.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/leagues/3" for ::1 at 2019-01-30 17:51:05 -0500
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mLeague Load (0.3ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mTeam Load (0.3ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."league_id" = ?  [["league_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered leagues/show.html.erb within layouts/application (9.9ms)
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 109ms (Views: 101.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 17:51:07 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mLeague Load (0.5ms)[0m  [1mSELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (33.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 96ms (Views: 92.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-01-30 17:58:05 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 17:58:07 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.2ms)[0m  SELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (10.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 68ms (Views: 65.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/leagues/new" for ::1 at 2019-01-30 17:59:34 -0500
+Processing by LeaguesController#new as HTML
+  Rendered leagues/new.html.erb within layouts/application (15.7ms)
+  [1m[35mUser Exists (1.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 173ms (Views: 158.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/leagues/new" for ::1 at 2019-01-30 18:00:18 -0500
+Processing by LeaguesController#new as HTML
+  Rendered leagues/new.html.erb within layouts/application (26.3ms)
+  [1m[35mUser Exists (1.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 114ms (Views: 110.0ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/leagues" for ::1 at 2019-01-30 18:00:27 -0500
+Processing by LeaguesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0YjauqiDjlSIiNV0Zm8QsDwb3IbYj5MepcsasBWvc8A5QNeUvitSd9z1QM3ceG2R7Kj/1YR0egI/UXYvWmIdNg==", "league"=>{"name"=>"The Delta League"}, "commit"=>"Create League"}
+  [1m[35m (2.6ms)[0m  begin transaction
+  [1m[36mLeague Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "leagues" WHERE "leagues"."name" = 'The Delta League' LIMIT 1[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "leagues" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "The Delta League"], ["created_at", "2019-01-30 23:00:27.352259"], ["updated_at", "2019-01-30 23:00:27.352259"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/leagues/4
+Completed 302 Found in 89ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/leagues/4" for ::1 at 2019-01-30 18:00:27 -0500
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mLeague Load (0.5ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mTeam Load (0.2ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."league_id" = ?[0m  [["league_id", 4]]
+  Rendered leagues/show.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 80ms (Views: 72.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:00:33 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mLeague Load (0.3ms)[0m  [1mSELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mTeam Load (0.2ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (11.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 84ms (Views: 80.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:04:52 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/show.html.erb:50: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/show.html.erb:52: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/show.html.erb:50: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/show.html.erb:52: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (123.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (118.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (252.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:05:28 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/show.html.erb:51: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/show.html.erb:51: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (95.2ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (210.4ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:09:44 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/show.html.erb:21: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze; else 
+              ^
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/show.html.erb:56: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/show.html.erb:58: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/show.html.erb:21: syntax error, unexpected keyword_else, expecting keyword_end
+  app/views/users/show.html.erb:56: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/show.html.erb:58: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (122.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (102.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (224.1ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:18:34 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/_table2.html.erb (7.4ms)
+  Rendered users/show.html.erb within layouts/application (36.5ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 1.3ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:42: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:44: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/_table2.html.erb:42: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/_table2.html.erb:44: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/users/show.html.erb:6:in `_app_views_users_show_html_erb___3994316199966034119_70254963897300'
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (119.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.8ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (103.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (3.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (227.9ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:21:28 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_table2.html.erb (3.8ms)
+  Rendered users/show.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/users/show.html.erb:6:in `_app_views_users_show_html_erb___3994316199966034119_70254938554900'
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (117.1ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.8ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (108.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (238.5ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:22:18 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/_table2.html.erb (1.7ms)
+  Rendered users/show.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/users/show.html.erb:4:in `_app_views_users_show_html_erb___3994316199966034119_70254977931840'
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.0ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (128.2ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (131.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.8ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (281.0ms)
+
+
+Started POST "/leagues" for ::1 at 2019-01-30 18:22:22 -0500
+Processing by LeaguesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0YjauqiDjlSIiNV0Zm8QsDwb3IbYj5MepcsasBWvc8A5QNeUvitSd9z1QM3ceG2R7Kj/1YR0egI/UXYvWmIdNg==", "league"=>{"name"=>"The Delta League"}, "commit"=>"Create League"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mLeague Exists (0.3ms)[0m  SELECT  1 AS one FROM "leagues" WHERE "leagues"."name" = 'The Delta League' LIMIT 1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.8ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"leagues", :id=>nil} missing required keys: [:id]):
+  app/controllers/leagues_controller.rb:22:in `create'
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (114.2ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.8ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (203.4ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:22:32 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/_table2.html.erb (4.0ms)
+  Rendered users/show.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/users/show.html.erb:4:in `_app_views_users_show_html_erb___3994316199966034119_70254977931840'
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (114.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (95.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.8ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (216.3ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:22:37 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_table2.html.erb (1.2ms)
+  Rendered users/show.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/users/show.html.erb:4:in `_app_views_users_show_html_erb___3994316199966034119_70254977931840'
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (88.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (206.9ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:23:34 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/_table2.html.erb (2.0ms)
+  Rendered users/show.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/users/show.html.erb:2:in `_app_views_users_show_html_erb___3994316199966034119_70254959927680'
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.8ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (92.0ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (208.5ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:24:11 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/_table2.html.erb (1.0ms)
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/_table2.html.erb:41: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/_table2.html.erb:43: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/users/show.html.erb:2:in `_app_views_users_show_html_erb___3994316199966034119_70254959927680'
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (103.7ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (94.0ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (211.0ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:25:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/show.html.erb:50: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/christompkins/Desktop/rails_ct_fantasy_basketball/app/views/users/show.html.erb:52: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/users/show.html.erb:50: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/users/show.html.erb:52: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (108.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.9ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christompkins/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (207.0ms)
+
+
+Started GET "/users/2" for ::1 at 2019-01-30 18:26:40 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mLeague Load (0.7ms)[0m  SELECT "leagues".* FROM "leagues" INNER JOIN "teams" ON "leagues"."id" = "teams"."league_id" WHERE "teams"."user_id" = ?  [["user_id", 2]]
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered users/_table2.html.erb (11.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (19.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 67ms (Views: 64.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/teams/5" for ::1 at 2019-01-30 18:28:13 -0500
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTeam Load (0.2ms)[0m  SELECT  "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mLeague Load (0.1ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPlayer Load (0.2ms)[0m  SELECT "players".* FROM "players" WHERE "players"."team_id" = ?  [["team_id", 5]]
+  Rendered teams/show.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 68ms (Views: 64.8ms | ActiveRecord: 1.0ms)

@@ -1,8 +1,22 @@
 <h1> Welcome to the <%= @league.name %> page</h1>
 
 <h3> Here are all the teams currently in your league: </h3>
-  <ul>
-    <% @teams.each do |t| %>
-      <li> <%= link_to "#{t.name}", t  %> - <%= t.user.name %> </li>
-    <% end %>
-  </ul>
+
+<table class="table table-hover players">
+  <thead>
+    <tr>
+      <th> No. </th>
+      <th> Team Name </th>
+      <th> Owner </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @teams.each_with_index do |t, index| %>
+      <tr>
+        <td> <%= index + 1%> </td>
+        <td> <%= link_to "#{t.name}", t  %></td>
+        <td> <%= link_to "#{t.user.name}", user_path(t.user.id) %> </td>
+      </tr>
+    <%end%>
+  </tbody>
+</table>
