@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root 'users#new'
-  resources :users, :leagues, :teams, :sessions
-
+  resources :users, :leagues, :teams, :sessions, :players
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
@@ -13,7 +12,7 @@ Rails.application.routes.draw do
   get 'users/league'
 
   get '/join_league' =>'leagues#index'
+  get '/join_league/:id' =>'teams#new', as: "join_a_league"
   post '/leagues/:id' => 'leagues#update'
-
 
 end

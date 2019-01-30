@@ -44,6 +44,13 @@ class LeaguesController < ApplicationController
 
   end
 
+
+  def join_league
+    @user = current_user
+    @league = League.find(params[:id])
+    redirect_to new_team_path(@league)
+  end
+
   private
 
   def league_params

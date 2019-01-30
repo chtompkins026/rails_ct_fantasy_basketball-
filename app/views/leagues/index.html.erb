@@ -1,5 +1,5 @@
 <ol>
  <% @leagues.each do |l| %>
-  <li> <%= link_to "#{l.name}", l  %> </li>
+  <li> <%= link_to "#{l.name}", l  %> - <%= link_to "Join League", join_a_league_path(l.id) %> </li>
  <% end %>
 </ol>
