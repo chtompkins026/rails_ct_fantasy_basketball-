@@ -5,7 +5,9 @@
       <tr>
         <th> No. </th>
         <th> League Name </th>
-        <th> Admin Action </th>
+        <% if admin_only %>
+          <th> Admin Action </th>
+        <% end %> 
       </tr>
     </thead>
     <tbody>
@@ -13,7 +15,9 @@
         <tr>
           <td> <%= index + 1%> </td>
           <td> <%= link_to "#{l.name}", l  %></td>
-          <td> <%= link_to "Edit League", edit_league_path(l)%> </td>
+          <% if admin_only %>
+            <td> <%= link_to "Edit League", edit_league_path(l)%> </td>
+          <% end %>
         </tr>
       <%end%>
   </tbody>
@@ -26,6 +30,7 @@
         <tr>
           <th> No. </th>
           <th> Team Name </th>
+          <th> League Name </th>
           <th> Admin Action </th>
         </tr>
       </thead>
@@ -34,6 +39,7 @@
           <tr>
             <td> <%= index + 1%> </td>
             <td> <%= link_to "#{t.name}", t %> </td>
+            <td> <%= link_to "#{league_name?(t.league_id)}", league_name?(t.league_id) %> </td>
             <td> <%= link_to "Edit Team", edit_team_path(t) %> </td>
           </tr>
         <%end%>

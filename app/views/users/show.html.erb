@@ -1,10 +1,6 @@
 <h1>Hi, <%= @user.name%>!</h1>
 
-<% if admin_only %>
-  <%= render 'table2' %>
-<%else%>
-  <%= render 'table1' %>
-<%end %>
+<%= render 'table' %>
 
 <% if admin_only%>
   <%= link_to "New League", new_league_path %> <br> <br>
