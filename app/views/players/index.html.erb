@@ -25,7 +25,8 @@
         <td> <%= pl.position %> </td>
         <td> <%=pl.nba_team %> </td>
         <% if pl.team_id.nil? %>
-        <td> <%= button_to "Add Player", action: "create" %> </td>
+        <td> <%= button_to "Add Player", action: "create", params: { id: pl.id, name: pl.name, position: pl.position,
+          nba_team: pl.nba_team, points: pl.points, team_id: @team_id, user_id: @user.id, league_id: @league_id}%> </td>
         <% else %>
           <td> Player Not Available </td>
         <% end %>

@@ -2,12 +2,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_user, :require_login, :admin_only
   include SessionsHelper
+  include PlayersHelper 
 
   def current_user
     if !session[:user_id].nil? && User.exists?(id: session[:user_id])
       User.find(session[:user_id])
     else
-      session[:user_id] = nil 
+      session[:user_id] = nil
       return nil
     end
   end

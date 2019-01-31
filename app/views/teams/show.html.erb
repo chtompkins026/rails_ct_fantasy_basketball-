@@ -1,6 +1,6 @@
 <h1><%= @team.name %></h1>
 
-<%= link_to "League Home", league_path(@team.league)%>
+<%= link_to "League Home", league_path(@league)%>
 
 <table class="table table-hover players">
       <thead>
@@ -28,6 +28,6 @@
 
   <% if @team.user_id = current_user %>
     <div id='add_player_button'>
-      <%= link_to "Add Player", players_path %>
+      <%= link_to "Add Player", players_path(:league_id => @league, :team_id => @team.id) %> 
     </div>
-  <% end %> 
+  <% end %>
