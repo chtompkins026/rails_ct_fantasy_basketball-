@@ -15,6 +15,17 @@ class TeamsController < ApplicationController
   end
 
   def edit
+    @team = Team.find(params[:id])
+  end
+
+  def update
+    @team = Team.find(params[:id])
+    @team.update(team_params)
+    if @team.save
+      redirect_to team_path(@team)
+    else
+      render :edit
+    end
   end
 
   def create

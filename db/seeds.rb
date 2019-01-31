@@ -16,3 +16,5 @@
   team1 = Team.create!({name:'Team Alex', total_points:1120, user:user1, league:league1})
   player1 = Player.create!({name:'James Harden', position:'PG', nba_team:'Houston Rockets', points:100, team:team1})
   player2 = Player.create!({name:'Kemba Walker', position:'SG', nba_team:'Charlotte Hornets', points:49, team:team1})
+  player3 = Player.create!({name:'Taurean Prince', position:'SF', nba_team:'Atlanta Hawks', points:22})
+  player4 = Player.create!({name:'Danny Green', position:'SF', nba_team:'Toronto Raptors', points:29})
