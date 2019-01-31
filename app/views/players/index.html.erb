@@ -14,6 +14,7 @@
       <th> Name </th>
       <th> Position </th>
       <th> NBA Team </th>
+      <th> Projected Points </th>
       <th> Add Player </th>
     </tr>
   </thead>
@@ -24,6 +25,7 @@
         <td> <%= link_to "#{pl.name}", player_path(pl)%></td>
         <td> <%= pl.position %> </td>
         <td> <%=pl.nba_team %> </td>
+        <td> <%= pl.points %> </td> 
         <% if pl.team_id.nil? %>
         <td> <%= button_to "Add Player", action: "create", params: { id: pl.id, name: pl.name, position: pl.position,
           nba_team: pl.nba_team, points: pl.points, team_id: @team_id, user_id: @user.id, league_id: @league_id}%> </td>

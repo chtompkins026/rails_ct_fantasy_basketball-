@@ -22,6 +22,14 @@ class PlayersController < ApplicationController
     redirect_to team_path(@team)
   end
 
+  def destroy
+    @player = Player.find_by(id: params[:id])
+    @team = @player.team_id
+    @player.update(team_id: nil)
+    @player.save
+
+    redirect_to team_path(@team)
+  end
 
   private
 
