@@ -30,12 +30,20 @@ class PlayersController < ApplicationController
 
   def destroy
     @player = Player.find_by(id: params[:id])
-    @team = @player.team_id
-    @player.update(team_id: nil, league_id: nil)
-    @player.save
-
-    redirect_to team_path(@team)
+    @team_id = @player.team.id
+    @user = @player.team.user_id
+    @pl = @player.player_leagues.find_by(league_id: @player.team.league_id)
+    if @user == current_user.id
+      @pl.delete
+      @player.update(team_id: nil, league_id: nil)
+      @player.save
+      redirect_to team_path(@team_id)
+    else
+      flash[:error] = "Can't be droping players not on your team"
+      redirect_to players_path
+    end
   end
+
 
   private
 
