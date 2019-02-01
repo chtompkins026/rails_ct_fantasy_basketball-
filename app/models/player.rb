@@ -1,5 +1,6 @@
 class Player < ActiveRecord::Base
   belongs_to :team
+  has_many :player_leagues 
   validates_presence_of :name, :position, :nba_team, :points
   validates_uniqueness_of :name, scope: :team_id, message: " can not be a duplicate of someone already on your team"
 
@@ -9,7 +10,7 @@ class Player < ActiveRecord::Base
     if search
       player = Player.find_by(name: search)
       if player
-        self.where(player_id: player)
+        return player
       else
         Player.all
       end

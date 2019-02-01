@@ -16,16 +16,22 @@ class PlayersController < ApplicationController
   def create
     @team = Team.find(params[:team_id])
     @player = Player.find_by(id: params[:id])
-    @player.update(team_id: params[:team_id])
-    @player.save
 
-    redirect_to team_path(@team)
+    unless @player.player_leagues.pluck(:league_id).include?(@team.league.id)
+      @player_league = PlayerLeague.create({league_id: @team.league.id, player_id: @player.id})
+      @player.update(team_id: params[:team_id], league_id: @team.league.id)
+      @player.save
+      redirect_to team_path(@team)
+    else
+      flash[:error] = "Can't Add Duplicate Player!"
+      redirect_to players_path
+    end
   end
 
   def destroy
     @player = Player.find_by(id: params[:id])
     @team = @player.team_id
-    @player.update(team_id: nil)
+    @player.update(team_id: nil, league_id: nil)
     @player.save
 
     redirect_to team_path(@team)

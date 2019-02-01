@@ -6,6 +6,7 @@ class CreatePlayers < ActiveRecord::Migration
       t.string :nba_team
       t.integer :points
       t.integer :team_id
+      t.integer :league_id, :default => nil
 
       t.timestamps null: false
     end

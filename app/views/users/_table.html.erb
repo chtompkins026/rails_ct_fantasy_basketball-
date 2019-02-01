@@ -5,9 +5,9 @@
       <tr>
         <th> No. </th>
         <th> League Name </th>
-        <% if admin_only %>
+        <% if @user.admin %>
           <th> Admin Action </th>
-        <% end %> 
+        <% end %>
       </tr>
     </thead>
     <tbody>
@@ -15,7 +15,7 @@
         <tr>
           <td> <%= index + 1%> </td>
           <td> <%= link_to "#{l.name}", l  %></td>
-          <% if admin_only %>
+          <% if @user.admin %>
             <td> <%= link_to "Edit League", edit_league_path(l)%> </td>
           <% end %>
         </tr>

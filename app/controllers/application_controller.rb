@@ -21,11 +21,11 @@ class ApplicationController < ActionController::Base
   end
 
   def admin_only
-    unless current_user.admin
-      flash[:notice] = "You must be an admin to perform that function!"
-      redirect_to user_path(current_user)
-    else
+    if current_user.admin
       return true
+    else
+      flash[:notice] = "You are not an admin, so you can't do this function"
+      redirect_to user_path(current_user)
     end
   end
 

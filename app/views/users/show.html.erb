@@ -2,7 +2,7 @@
 
 <%= render 'table' %>
 
-<% if admin_only%>
+<% if @user.admin %>
   <%= link_to "New League", new_league_path %> <br> <br>
   <%= link_to "Join League", join_league_path %>
 <% else %>
