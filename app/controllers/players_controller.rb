@@ -24,7 +24,7 @@ class PlayersController < ApplicationController
       redirect_to team_path(@team)
     else
       flash[:error] = "Can't Add Duplicate Player!"
-      redirect_to players_path
+      redirect_to team_players_path
     end
   end
 
@@ -40,7 +40,7 @@ class PlayersController < ApplicationController
       redirect_to team_path(@team_id)
     else
       flash[:error] = "Can't be droping players not on your team"
-      redirect_to players_path
+      redirect_to team_players_path
     end
   end
 

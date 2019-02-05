@@ -18,11 +18,11 @@
         <%@players.each_with_index do |player, index|%>
           <tr>
             <td> <%= index + 1%> </td>
-            <td> <a href="/players/<%=player.id%>"><%=player.name%></a> </td>
+            <td> <%= link_to "#{player.name}", team_player_path(@team.id, player) %> </td>
             <td> <%= player.nba_team %>  </td>
             <td> <%=player.position %> </td>
-            <td> <%= player.points %> </td> 
-            <td> <%= link_to "Drop Player", player_path(player), method: :delete %> </a></td>
+            <td> <%= player.points %> </td>
+            <td> <%= link_to "Drop Player", team_player_path(@team.id, player), method: :delete %> </a></td>
           </tr>
         <%end%>
       </tbody>
@@ -30,6 +30,6 @@
 
   <% if @team.user_id = current_user %>
     <div id='add_player_button'>
-      <%= link_to "Add Player", players_path(:league_id => @league, :team_id => @team.id) %>
+      <%= link_to "Add Player", team_players_path(:league_id => @league, :team_id => @team.id) %>
     </div>
   <% end %>

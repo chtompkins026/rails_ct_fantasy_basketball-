@@ -2,9 +2,19 @@
 <p> If marked available, select "Add" to add the player to your roster</p>
 
 <h4> Search for Player by Name </h4>
-  <%= form_tag(players_path, method: :get) do %>
-   <%= text_field(:search, params[:search]) %>
-   <%= submit_tag ("Search") %>
+  <%= form_tag(team_players_path, method: :get) do %>
+     <%= text_field(:search, params[:search], id: "player_search_bar") %> <br>
+     <%= label_tag ("Point Guard") %>
+     <%= check_box_tag("PG", id: "PG") %>
+     <%= label_tag ("Shooting Guard") %>
+     <%= check_box_tag("SG", id: "SG") %>
+     <%= label_tag ("Small Forward") %>
+     <%= check_box_tag("SF", id: "SF") %>
+     <%= label_tag ("Power Forward") %>
+     <%= check_box_tag("PF", id: "PF") %>
+     <%= label_tag ("Center") %>
+     <%= check_box_tag("C", id: "C") %> <br>
+     <%= submit_tag ("Search") %>`
    <% end %>
 
 <table class="table table-hover players">
@@ -22,7 +32,7 @@
     <% @players.each_with_index do |pl, index| %>
       <tr>
         <td> <%= index + 1%> </td>
-        <td> <%= link_to "#{pl.name}", player_path(pl)%></td>
+        <td> <%= link_to "#{pl.name}", team_player_path(@team_id, pl)%></td>
         <td> <%= pl.position %> </td>
         <td> <%=pl.nba_team %> </td>
         <td> <%= pl.points %> </td>
