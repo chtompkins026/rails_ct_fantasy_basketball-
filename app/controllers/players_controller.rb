@@ -18,7 +18,7 @@ class PlayersController < ApplicationController
     @player = Player.find_by(id: params[:id])
 
     unless @player.player_leagues.pluck(:league_id).include?(@team.league.id)
-      @player_league = PlayerLeague.create({league_id: @team.league.id, player_id: @player.id})
+      @player_league = PlayerLeague.create({league_id: @team.league.id, player_id: @player.id, utility: params[:utility]})
       @player.update(team_id: params[:team_id], league_id: @team.league.id)
       @player.save
       redirect_to team_path(@team)

@@ -1,5 +1,7 @@
 class League < ActiveRecord::Base
-  belongs_to :player 
+  belongs_to :player
+  has_many :player_leagues
+  has_many :players, through: :player_leagues
   has_many :teams
   has_many :users, through: :teams
 
