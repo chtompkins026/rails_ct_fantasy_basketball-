@@ -26,6 +26,7 @@
       <th> NBA Team </th>
       <th> Projected Points </th>
       <th> Add Player </th>
+      <th> Add Utility </th>
     </tr>
   </thead>
   <tbody>
@@ -38,12 +39,11 @@
         <td> <%= pl.points %> </td>
 
         <% unless pl.player_leagues.pluck(:league_id).include?(@league_id.id) %>
-          <td> <%= link_to "Normal", action: "create", params: { id: pl.id, name: pl.name, position: pl.position,
-            nba_team: pl.nba_team, points: pl.points, team_id: @team_id, user_id: @user.id, league_id: @league_id.id, utility: false}%> ||
-            <%= link_to "Utility", action: "create", params: { id: pl.id, name: pl.name, position: pl.position,
-              nba_team: pl.nba_team, points: pl.points, team_id: @team_id, user_id: @user.id, league_id: @league_id.id, utility: true}%> </td>
+          <td> <%= button_to "Normal", action: "create", params: { id: pl.id, team_id: @team_id, user_id: @user.id, league_id: @league_id.id, utility: false}%> </td>
+            <td> <%= button_to "Utility", action: "create", params: { id: pl.id, team_id: @team_id, user_id: @user.id, league_id: @league_id.id, utility: true}%> </td>
         <% else %>
           <td class="disabled"> Player Not Available </td>
+          <td> </td>
         <% end %>
       </tr>
     <%end%>
