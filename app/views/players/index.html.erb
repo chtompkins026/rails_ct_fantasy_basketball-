@@ -33,14 +33,14 @@
     <% @players.each_with_index do |pl, index| %>
       <tr>
         <td> <%= index + 1%> </td>
-        <td> <%= link_to "#{pl.name}", team_player_path(@team_id, pl)%></td>
+        <td> <%= link_to "#{pl.name}", team_player_path(@team, pl)%></td>
         <td> <%= pl.position %> </td>
         <td> <%=pl.nba_team %> </td>
         <td> <%= pl.points %> </td>
 
         <% unless pl.player_leagues.pluck(:league_id).include?(@league_id.id) %>
-          <td> <%= button_to "Normal", action: "create", params: { id: pl.id, team_id: @team_id, user_id: @user.id, league_id: @league_id.id, utility: false}%> </td>
-            <td> <%= button_to "Utility", action: "create", params: { id: pl.id, team_id: @team_id, user_id: @user.id, league_id: @league_id.id, utility: true}%> </td>
+          <td> <%= button_to "Normal", team_players_path(@team, id: pl.id, league_id: @league_id.id, utility: false)%> </td>
+          <td> <%= button_to "Utility", team_players_path(@team, id: pl.id, league_id: @league_id.id, utility: true)%> </td>
         <% else %>
           <td class="disabled"> Player Not Available </td>
           <td> </td>

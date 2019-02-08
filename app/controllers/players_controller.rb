@@ -5,7 +5,7 @@ class PlayersController < ApplicationController
 
   def index
     @players = Player.search(params[:search])
-    @team_id = Team.find(params[:team_id])
+    @team = Team.find(params[:team_id])
     @league_id = League.find(params[:league_id])
 
     if session[:user_id]
