@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190201211646) do
+ActiveRecord::Schema.define(version: 20190208032353) do
 
   create_table "leagues", force: :cascade do |t|
     t.string   "name"
@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 20190201211646) do
     t.datetime "updated_at", null: false
   end
 
-  #notes field? Utility? Clean up relationships 
   create_table "player_leagues", force: :cascade do |t|
     t.integer  "league_id"
     t.integer  "player_id"
@@ -56,6 +55,10 @@ ActiveRecord::Schema.define(version: 20190201211646) do
     t.datetime "updated_at",                           null: false
     t.string   "google_token"
     t.string   "google_refresh_token"
+    t.string   "provider"
+    t.string   "uid"
   end
+
+  add_index "users", ["provider", "uid"], name: "index_users_on_provider_and_uid"
 
 end

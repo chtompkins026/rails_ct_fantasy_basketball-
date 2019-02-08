@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
   include PlayersHelper
   include LeaguesHelper
-  include UsersHelper
 
   def current_user
     if !session[:user_id].nil? && User.exists?(id: session[:user_id])

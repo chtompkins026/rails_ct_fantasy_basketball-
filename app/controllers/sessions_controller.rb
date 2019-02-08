@@ -5,15 +5,10 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if omni?
-       session[:user_id] = user.id
-       redirect_to request.env['omniauth.origin']
-    elsif
-      @user = User.find_by(email: params[:session][:email].downcase)
-      if @user && @user.authenticate(params[:session][:password])
-        log_in(@user)
-        redirect_to @user
-      end
+    @user = User.find_by(email: params[:session][:email].downcase)
+    if @user && @user.authenticate(params[:session][:password])
+      log_in(@user)
+      redirect_to @user
     else
       flash[:error] = 'Invalid email/password combination'
       render 'new'
@@ -29,12 +24,12 @@ class SessionsController < ApplicationController
 
   private
 
-  def hitmebaby(user, info)
-    if (flash[:error] = User.auth_error(user, info))
-      redirect_to login_path
-    else
-      login(user)
-    end
-  end
+  # def hitmebaby(user, info)
+  #   if (flash[:error] = User.auth_error(user, info))
+  #     redirect_to login_path
+  #   else
+  #     login(user)
+  #   end
+  # end
 
 end #end of controller

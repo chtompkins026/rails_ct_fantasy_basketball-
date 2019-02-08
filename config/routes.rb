@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get '/join_league/:id' =>'teams#new', as: "join_a_league"
   post '/leagues/:id' => 'leagues#update'
 
-  get '/auth/:provider/callback' => 'sessions#create', as: "authorize"
+  get '/auth/:provider/callback' => 'omniauth_callbacks#create', as: "authorize"
   get '/auth/failure', to: redirect('/')
 
 end
