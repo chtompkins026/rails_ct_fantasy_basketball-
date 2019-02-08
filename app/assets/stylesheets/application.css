@@ -184,3 +184,7 @@ input[type=submit]:hover {
   width: 70%;
   margin-top: 6px;
 }
+
+.disabled {
+  color: gray; 
+}
