@@ -37,7 +37,7 @@
         <td> <%= pl.position %> </td>
         <td> <%=pl.nba_team %> </td>
         <td> <%= pl.points %> </td>
-
+        <%= throw pl.player_leagues if pl.id == 2173 %> 
         <% unless pl.player_leagues.pluck(:league_id).include?(@league_id.id) %>
           <td> <%= button_to "Normal", team_players_path(@team, id: pl.id, league_id: @league_id.id, utility: false)%> </td>
           <td> <%= button_to "Utility", team_players_path(@team, id: pl.id, league_id: @league_id.id, utility: true)%> </td>

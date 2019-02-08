@@ -1,4 +1,5 @@
 class PlayersController < ApplicationController
+
   def show
     @player = Player.find(params[:id])
   end
@@ -19,7 +20,7 @@ class PlayersController < ApplicationController
 
     unless @player.player_leagues.pluck(:league_id).include?(@team.league.id)
       @player_league = PlayerLeague.create({league_id: @team.league.id, player_id: @player.id, utility: params[:utility]})
-      @player.update(team_id: params[:team_id], league_id: @team.league.id)
+      @player.update(team_id: params[:team_id])
       @player.save
       redirect_to team_path(@team)
     else
@@ -35,7 +36,7 @@ class PlayersController < ApplicationController
     @pl = @player.player_leagues.find_by(league_id: @player.team.league_id)
     if @user == current_user.id
       @pl.delete
-      @player.update(team_id: nil, league_id: nil)
+      @player.update(team_id: nil)
       @player.save
       redirect_to team_path(@team_id)
     else
