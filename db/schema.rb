@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(version: 20190208155824) do
   create_table "player_leagues", force: :cascade do |t|
     t.integer  "league_id"
     t.integer  "player_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.boolean  "utility"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.boolean  "utility",    default: false
   end
 
   create_table "players", force: :cascade do |t|
