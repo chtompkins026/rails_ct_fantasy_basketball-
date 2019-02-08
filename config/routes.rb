@@ -11,14 +11,15 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
 
   get '/signup' => 'users#new'
-  get 'users/players'
-  get 'users/teams'
-  get 'users/league'
+  get '/users/players'
+  get '/users/teams'
+  get '/users/league'
 
   get '/join_league' =>'leagues#index'
   get '/join_league/:id' =>'teams#new', as: "join_a_league"
   post '/leagues/:id' => 'leagues#update'
 
-  get '/auth/facebook/callback' => 'sessions#create'
+  get '/auth/:provider/callback' => 'sessions#create', as: "authorize"
+  get '/auth/failure', to: redirect('/')
 
 end

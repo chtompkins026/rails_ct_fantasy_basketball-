@@ -42,7 +42,7 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'dotenv-rails'
 gem 'omniauth'
 gem 'omniauth-facebook'
-gem 'omniauth-google-oauth2'
+gem 'omniauth-github'
 gem 'thin'
 
 # Use Capistrano for deployment

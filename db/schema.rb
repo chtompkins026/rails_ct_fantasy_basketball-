@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20190201211646) do
     t.datetime "updated_at", null: false
   end
 
+  #notes field? Utility? Clean up relationships 
   create_table "player_leagues", force: :cascade do |t|
     t.integer  "league_id"
     t.integer  "player_id"

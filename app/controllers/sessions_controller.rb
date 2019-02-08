@@ -4,23 +4,16 @@ class SessionsController < ApplicationController
     @user = User.new
   end
 
-  # def create
-  #   @user = User.find_or_create_by(uid: auth['uid']) do |u|
-  #     u.name = auth['info']['name']
-  #     u.email = auth['info']['email']
-  #   end
-  #
-  #   binding.pry
-  #   session[:user_id] = @user.id
-  #
-  #   redirect_to @user
-  # end
-
   def create
-    @user = User.find_by(email: params[:session][:email].downcase)
-    if @user && @user.authenticate(params[:session][:password])
-      log_in(@user)
-      redirect_to @user
+    if omni?
+       session[:user_id] = user.id
+       redirect_to request.env['omniauth.origin']
+    elsif
+      @user = User.find_by(email: params[:session][:email].downcase)
+      if @user && @user.authenticate(params[:session][:password])
+        log_in(@user)
+        redirect_to @user
+      end
     else
       flash[:error] = 'Invalid email/password combination'
       render 'new'
@@ -34,10 +27,14 @@ class SessionsController < ApplicationController
     end
   end
 
-  def googleAuth
-    # Get access tokens from the google server
-    auth = request.env['omniauth.auth']
-    raise auth.inspect
+  private
+
+  def hitmebaby(user, info)
+    if (flash[:error] = User.auth_error(user, info))
+      redirect_to login_path
+    else
+      login(user)
+    end
   end
 
 end #end of controller
