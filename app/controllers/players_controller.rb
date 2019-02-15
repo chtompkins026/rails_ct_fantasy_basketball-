@@ -17,12 +17,17 @@ class PlayersController < ApplicationController
   def create
     @team = Team.find(params[:team_id])
     @player = Player.find_by(id: params[:id])
+    @user = @team.user_id
+    @league = League.find_by(id: params[:league_id])
 
-    unless @player.player_leagues.pluck(:league_id).include?(@team.league.id)
+    if !@player.player_leagues.pluck(:league_id).include?(@team.league.id) && @user == current_user
       @player_league = PlayerLeague.create({league_id: @team.league.id, player_id: @player.id, utility: params[:utility]})
       @player.update(team_id: params[:team_id])
       @player.save
       redirect_to team_path(@team)
+    elsif @user != current_user
+      flash[:error] = "You Can't Add a Player to a Team That Is Not Yours!"
+      redirect_to league_path(@league)
     else
       flash[:error] = "Can't Add Duplicate Player!"
       redirect_to team_players_path
