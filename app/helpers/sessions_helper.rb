@@ -10,4 +10,9 @@ module SessionsHelper
     !!session[:user_id]
   end
 
+  #checks to see if user is trying to create his own team or making team via admin
+  def create_team_check(url)
+    url =~ /(join_league)/ ? TRUE : FALSE
+  end
+
 end

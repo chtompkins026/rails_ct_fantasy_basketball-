@@ -31,7 +31,8 @@
           <th> No. </th>
           <th> Team Name </th>
           <th> League Name </th>
-          <th> Admin Action </th>
+          <th> Edit Team </th>
+          <th> Delete Team </th>
         </tr>
       </thead>
       <tbody>
@@ -39,8 +40,9 @@
           <tr>
             <td> <%= index + 1%> </td>
             <td> <%= link_to "#{t.name}", t %> </td>
-            <td> <%= link_to "#{league_name?(t.league_id)}", league_name?(t.league_id) %> </td>
-            <td> <%= link_to "Edit Team", edit_team_path(t) %> </td>
+            <td> <%= link_to "#{league_name?(t.league_id)}", league_path(league_name?(t.league_id)) %> </td>
+            <td> <%= link_to "Edit", edit_team_path(t) %> </td>
+            <td> <%= link_to 'Delete', team_path(t), method: :delete %></td>
           </tr>
         <%end%>
     </tbody>

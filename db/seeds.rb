@@ -22,6 +22,7 @@
   user8 = User.create!({name: 'Reebs Poonawala', password:'password1', email:'chtompkins02777@gmail.com', admin: FALSE})
   user9 = User.create!({name: 'Margot Robbie', password:'password1', email:'chtompkins027333@gmail.com', admin: FALSE})
   user10 = User.create!({name: 'Harvey Spectre', password:'password1', email:'chtompkins027445@gmail.com', admin: FALSE})
+  user11 = User.create!({name: 'Jessica Pearson', password:'password1', email:'chtompkins0274453@gmail.com', admin: FALSE})
   team1 = Team.create!({name:'Team Alex', total_points:1120, user:user1, league:league1})
   player1 = Player.create!({name:'James Harden', position:'PG', nba_team:'Houston Rockets', points:100})
   player2 = Player.create!({name:'Kemba Walker', position:'SG', nba_team:'Charlotte Hornets', points:49})

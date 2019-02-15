@@ -1,12 +1,15 @@
 <%= form_for(@team) do |t| %>
   <%= t.hidden_field :league_id, value: @team.league_id %>
-  <% if current_user.admin %>
-    <%= t.select :user_id, options_from_collection_for_select(User.not_in_league(@team.league_id), 'id', 'name') %>
+  <% if current_user.admin && !create_team_check(request.url)%>
+    <%= t.label :user_name %>
+    <%= t.select :user_id, options_from_collection_for_select(User.not_in_league(@team.league_id), 'id', 'name') %> <br>
   <% else %>
     <%= t.hidden_field :user_id, value:session[:user_id] %>
   <% end %>
+  <br>
   <%= t.label :name %>
   <%= t.text_field :name %>
-
+  <br>
+  <br>
   <%= t.submit %>
 <% end %>

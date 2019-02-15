@@ -26,7 +26,7 @@ class LeaguesController < ApplicationController
   end
 
   def show
-    @league = League.find(params[:id])
+    @league = League.find_by(id: params[:id]) || League.find_by(name: params[:id])
     @teams = @league.teams
   end
 
