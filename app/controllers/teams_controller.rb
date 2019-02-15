@@ -34,7 +34,7 @@ class TeamsController < ApplicationController
     @team = Team.new(team_params)
     if @team.save
       flash[:success] = "Successfully created team!"
-      redirect_to @team
+      redirect_to team_path(@team)
     else
       flash[:error] = "#{@team.errors.full_messages.join(". ")}"
       redirect_to league_path(@team.league.id)

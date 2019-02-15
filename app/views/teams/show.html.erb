@@ -30,6 +30,7 @@
 
   <% if @team.user_id = current_user %>
     <div id='add_player_button'>
-      <%= link_to "Add Player", team_players_path(:league_id => @league, :team_id => @team.id) %>
+      <%= link_to "Add Player", team_players_path(:league_id => @league, :team_id => @team.id) %> <br>
+      <%= "This is the Team User Id #{@team.inspect}"%>
     </div>
   <% end %>
