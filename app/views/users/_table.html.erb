@@ -30,7 +30,7 @@
           <tr>
             <td> <%= index + 1 %> </td>
             <td> <%= link_to "#{t.name}", t %> </td>
-            <td> <%= link_to "#{league_name?(t.league_id)}", league_name?(t.league_id) %> </td>
+            <td> <%= link_to "#{league_name?(t.league_id)}", league_path(league_name?(t.league_id)) %> </td>
           </tr>
         <%end%>
     </tbody>
