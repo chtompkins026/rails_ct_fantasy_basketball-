@@ -1,8 +1,12 @@
-<h1><%= @team.name %></h1>
+<% if @user_id == current_user.id %>
+  <h1><%= @team.name %></h1>
+  <% else %>
+  <h1> <%= "This is your opponent: #{@team.name}" %> </h1>
+<% end %>
 
-<%= link_to "League Home", league_path(@league)%>
+  <%= link_to "League Home", league_path(@league)%>
 
-<table class="table table-hover players">
+  <table class="table table-hover players">
       <thead>
         <tr>
           <th> No. </th>
@@ -28,9 +32,8 @@
       </tbody>
     </table>
 
-  <% if @team.user_id = current_user %>
+  <% if @user_id == current_user.id %>
     <div id='add_player_button'>
       <%= link_to "Add Player", team_players_path(:league_id => @league, :team_id => @team.id) %> <br>
-      <%= "This is the Team User Id #{@team.inspect}"%>
     </div>
   <% end %>

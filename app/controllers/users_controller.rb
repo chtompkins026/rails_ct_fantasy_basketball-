@@ -17,7 +17,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    if session[:user_id]
+    if params[:id]
+      @user = User.find(params[:id])
+    elsif session[:user_id]
       @user = User.find(session[:user_id])
     else
       redirect_to '/'
