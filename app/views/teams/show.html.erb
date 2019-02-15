@@ -1,7 +1,7 @@
-<% if @user_id == current_user.id %>
+<% if user_check(@user_id)%>
   <h1><%= @team.name %></h1>
   <% else %>
-  <h1> <%= "This is your opponent: #{@team.name}" %> </h1>
+    <h1> <%= "This is your opponent: #{@team.name}" %> </h1>
 <% end %>
 
   <%= link_to "League Home", league_path(@league)%>
@@ -14,7 +14,9 @@
           <th> Team </th>
           <th> Position </th>
           <th> Projected Points </th>
+        <% if user_check(@user_id) %>
           <th> Action </th>
+        <%end%>
         </tr>
       </thead>
 
@@ -26,13 +28,15 @@
             <td> <%= player.nba_team %>  </td>
             <td> <%=player.position %> </td>
             <td> <%= player.points %> </td>
-            <td> <%= link_to "Drop Player", team_player_path(@team.id, player), method: :delete %> </a></td>
+            <% if user_check(@user_id) %>
+              <td> <%= link_to "Drop Player", team_player_path(@team.id, player), method: :delete %> </a></td>
+            <% end %>
           </tr>
         <%end%>
       </tbody>
     </table>
 
-  <% if @user_id == current_user.id %>
+  <% if user_check(@user_id) %>
     <div id='add_player_button'>
       <%= link_to "Add Player", team_players_path(:league_id => @league, :team_id => @team.id) %> <br>
     </div>

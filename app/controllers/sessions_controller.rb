@@ -22,14 +22,4 @@ class SessionsController < ApplicationController
     end
   end
 
-  private
-
-  # def hitmebaby(user, info)
-  #   if (flash[:error] = User.auth_error(user, info))
-  #     redirect_to login_path
-  #   else
-  #     login(user)
-  #   end
-  # end
-
 end #end of controller
