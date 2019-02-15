@@ -1,16 +1,8 @@
-<% if @user.id == current_user.id %>
-<h1>Hi, <%= @user.name%>!</h1>
-<p> <%= link_to "Edit Your Information", edit_user_path(@user) %> <p>
-
-    <%= render 'table_other' %> <br>
-
-    <% if @user.admin %>
-      <%= link_to "Create A New League", new_league_path %> <br> <br>
-      <%= link_to "Join A League", join_league_path %>  <br><br>
-    <% else %>
-      <%= link_to "Join A New League", join_league_path %>  <br><br>
-    <% end %>
-
+<% if user_check(@user.id)%>
+  <h1>Hi, <%= @user.name%>!</h1>
+  <p> <%= link_to "Edit Your Information", edit_user_path(@user) %> <p>
 <% else %>
-      <%= render 'table' %>
-<% end %>
+  <h1>Checking out the competition, huh <%= current_user.name%>?!</h1>
+<%end%>
+
+  <%= render 'table' %> <br>
