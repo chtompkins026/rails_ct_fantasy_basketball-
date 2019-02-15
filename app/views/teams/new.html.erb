@@ -1,11 +1,3 @@
 <h1>Create Your Team</h1>
 
-<%= form_for(@team) do |t| %>
-  <%= t.hidden_field :league_id, value:@team.league_id %>
-  <%= t.hidden_field :user_id, value:session[:user_id] %>
-
-  <%= t.label :name %>
-  <%= t.text_field :name %><br>
-
-  <%= t.submit %>
-<% end %>
+ <%= render 'form' %> 

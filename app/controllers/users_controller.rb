@@ -24,9 +24,18 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
   def update
-    @user.update(name: params[:name], password: params[:password], email: params[:email])
-    @user.save
+    @user.update(user_params)  #only parameter by default is ID, so this is a security thing (user_params - private method)
+    if @user.save
+      redirect_to @user
+    else
+      flash[:error] = "#{@user.errors.full_messages.join(". ")}"
+      render 'edit'
+    end
   end
 
   def destroy

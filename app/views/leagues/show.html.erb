@@ -2,6 +2,10 @@
 
 <h3> Here are all the teams currently in your league: </h3>
 
+<% if current_user.admin %>
+  <%= link_to "Create Team as Admin", new_league_team_path(@league.id)%> 
+<% end %>
+
 <table class="table table-hover players">
   <thead>
     <tr>

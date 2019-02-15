@@ -11,7 +11,8 @@ class TeamsController < ApplicationController
   end
 
   def new
-    @league = League.find(params[:id])
+    id = params[:id].nil? ? params[:league_id] : params[:id]
+    @league = League.find(id)
     @team = @league.teams.build  #can't create a random team, need to associate with league
   end
 
@@ -30,7 +31,6 @@ class TeamsController < ApplicationController
   end
 
   def create
-
     @team = Team.new(team_params)
     if @team.save
       flash[:success] = "Successfully created team!"

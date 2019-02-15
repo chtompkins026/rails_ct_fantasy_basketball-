@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
   root 'users#new'
-  resources :users, :leagues, :sessions
+  resources :users, :sessions
 
   resources :teams do
     resources :players
+  end
+
+  resources :leagues do
+    resources :teams
   end
 
   get '/login' => 'sessions#new'
