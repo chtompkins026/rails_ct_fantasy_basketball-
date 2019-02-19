@@ -1,10 +1,10 @@
-<% if user_check(@user_id)%>
+<% if user_check(@team.user_id)%>
   <h1><%= @team.name %></h1>
   <% else %>
     <h1> <%= "This is your opponent: #{@team.name}" %> </h1>
 <% end %>
 
-  <%= link_to "League Home", league_path(@league)%>
+  <%= link_to "League Home", league_path(@team.league_id)%>
 
   <table class="table table-hover players">
       <thead>
@@ -14,21 +14,21 @@
           <th> Team </th>
           <th> Position </th>
           <th> Projected Points </th>
-        <% if user_check(@user_id) %>
+        <% if user_check(@team.user_id) %>
           <th> Action </th>
         <%end%>
         </tr>
       </thead>
 
       <tbody>
-        <%@players.each_with_index do |player, index|%>
+        <%@team.players.each_with_index do |player, index|%>
           <tr>
             <td> <%= index + 1%> </td>
             <td> <%= link_to "#{player.name}", team_player_path(@team.id, player) %> </td>
             <td> <%= player.nba_team %>  </td>
             <td> <%=player.position %> </td>
             <td> <%= player.points %> </td>
-            <% if user_check(@user_id) %>
+            <% if user_check(@team.user_id) %>
               <td> <%= link_to "Drop Player", team_player_path(@team.id, player), method: :delete %> </a></td>
             <% end %>
           </tr>
@@ -36,8 +36,8 @@
       </tbody>
     </table>
 
-  <% if user_check(@user_id) %>
+  <% if user_check(@team.user_id) %>
     <div id='add_player_button'>
-      <%= link_to "Add Player", team_players_path(:league_id => @league, :team_id => @team.id) %> <br>
+      <%= link_to "Add Player", team_players_path(:league_id => @team.league_id, :team_id => @team.id) %> <br>
     </div>
   <% end %>

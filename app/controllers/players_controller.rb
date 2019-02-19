@@ -7,8 +7,8 @@ class PlayersController < ApplicationController
   def index
     @players = Player.search(params[:search])
     @team = Team.find(params[:team_id])
-    @league_id = League.find(params[:league_id])
-
+    @league_id = @team.league_id
+    # should only have 1-2 instance variables
     if session[:user_id]
       @user = User.find(session[:user_id])
     end

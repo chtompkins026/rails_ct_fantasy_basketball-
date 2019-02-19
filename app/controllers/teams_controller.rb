@@ -2,9 +2,6 @@ class TeamsController < ApplicationController
 
   def show
     @team = Team.find(params[:id])
-    @user_id = @team.user_id
-    @players = @team.players
-    @league = @team.league_id
   end
 
   def index

@@ -1,11 +1,12 @@
 class OmniauthCallbacksController < ApplicationController
+
   def create
     if omni?
        session[:user_id] = @user.id
        log_in(@user)
        redirect_to @user
        #redirect_to request.env['omniauth.origin']
-       #devise <> check this out 
+       #devise <> check this out
      else
        flash[:error] = 'Invalid email/password combination'
        render 'new'
