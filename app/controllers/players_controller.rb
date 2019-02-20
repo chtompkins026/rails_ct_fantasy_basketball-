@@ -60,8 +60,8 @@ class PlayersController < ApplicationController
       :team_id, :search)
   end
 
-  def set_team
-    @team = Team.find(params[:id])
-  end
+  # def set_team
+  #   @team = Team.find(params[:id])
+  # end
 
 end
