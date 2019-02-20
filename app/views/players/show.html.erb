@@ -1,7 +1,9 @@
 <h1><%= @player.name%> Overview </h1>
-<% if owned?(@player) %>
-  <%= link_to "Back to team", team_path(@player.team) %> <br>
-<% end %>
+  <% if owned?(@player.player_teams) %>
+    <%= link_to "Back to team", team_path(@player.team) %> <br>
+  <% else %>
+    <%= link_to "Back to league", team_players_path(previous_url) %> <br>
+  <% end %>
 <ul>
   <li> Position: <%= @player.position %> </li>
   <li> NBA Team: <%= @player.nba_team %> </li>

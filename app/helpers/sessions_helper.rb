@@ -15,4 +15,8 @@ module SessionsHelper
     url =~ /(join_league)/ ? TRUE : FALSE
   end
 
+  def previous_url
+    raise request.referrer.inspect
+  end
+
 end
