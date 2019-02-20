@@ -12,6 +12,8 @@
   Player.destroy_all
 
   league1 = League.create!({name:'Awesome League'})
+  league2 = League.create!({name:'Danger League'})
+  league3 = League.create!({name:'Calabasas League'})
   user1 = User.create!({name: 'Chris', password:'password', email:'chtompkins026@gmail.com', admin: TRUE})
   user2 = User.create!({name: 'Jason Tompkins', password:'password1', email:'chtompkins027@gmail.com', admin: FALSE})
   user3 = User.create!({name: 'Jason Wang', password:'password1', email:'chtompkins0299@gmail.com', admin: FALSE})
