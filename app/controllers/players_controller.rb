@@ -19,13 +19,9 @@ class PlayersController < ApplicationController
   def create
     @team = Team.find(params[:team_id])
     @player = Player.find_by(id: params[:id])
-    @user_id = @team.user_id
-    @league = League.find_by(id: params[:league_id])
 
-    if !@player.player_leagues.pluck(:league_id).include?(@team.league.id) && @user_id == current_user.id
-      @player_league = PlayerLeague.create({league_id: @team.league.id, player_id: @player.id, utility: params[:utility]})
-      @player.update(team_id: params[:team_id])
-      @player.save
+    if !@player.player_teams.include?(@team) && @user_id == current_user.id
+      player_team = PlayerTeam.create({team_id: @team.id, player_id: @player.id, utility: params[:utility]})
       redirect_to team_path(@team)
     elsif @user_id != current_user.id
       flash[:error] = "You Can't Add a Player to a Team That Is Not Yours!"
