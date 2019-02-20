@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190208174101) do
+ActiveRecord::Schema.define(version: 20190220192221) do
 
   create_table "leagues", force: :cascade do |t|
     t.string   "name"
@@ -19,20 +19,21 @@ ActiveRecord::Schema.define(version: 20190208174101) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "player_leagues", force: :cascade do |t|
-    t.integer  "league_id"
+  create_table "player_teams", force: :cascade do |t|
     t.integer  "player_id"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
-    t.boolean  "utility",    default: false
+    t.integer  "team_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
+
+  add_index "player_teams", ["player_id"], name: "index_player_teams_on_player_id"
+  add_index "player_teams", ["team_id"], name: "index_player_teams_on_team_id"
 
   create_table "players", force: :cascade do |t|
     t.string   "name"
     t.string   "position"
     t.string   "nba_team"
     t.integer  "points"
-    t.integer  "team_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

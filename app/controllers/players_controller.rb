@@ -1,5 +1,7 @@
 class PlayersController < ApplicationController
 
+  # before_
+
   def show
     @player = Player.find(params[:id])
   end
@@ -56,6 +58,10 @@ class PlayersController < ApplicationController
   def player_params
     params.require(:player).permit(:name, :position, :nba_team, :points,
       :team_id, :search)
+  end
+
+  def set_team
+    @team = Team.find(params[:id])
   end
 
 end
