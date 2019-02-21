@@ -1,8 +1,4 @@
 class Player < ActiveRecord::Base
-  # TODO: delete player_leagues since it doesnt exist
-  has_many :player_leagues
-  has_many :leagues, through: :player_leagues
-
   has_many :player_teams
   has_many :teams, through: :player_teams
 

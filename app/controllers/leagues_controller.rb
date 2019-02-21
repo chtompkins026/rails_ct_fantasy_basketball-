@@ -17,10 +17,11 @@ class LeaguesController < ApplicationController
   end
 
   def create
-    @league = League.create(league_params)
-    if @league
+    @league = League.new(league_params)
+    if @league.save
       redirect_to league_path(@league)
     else
+      flash[:error]="#{@league.errors.full_messages.join(". ")}"
       render :new
     end
   end
