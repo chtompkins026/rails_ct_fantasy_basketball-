@@ -41,28 +41,16 @@ class TeamsController < ApplicationController
 
   def destroy
     team = Team.find(params[:id])
-    team.players.each do |p|
-      player_team_help(p, team, team.user_id)
-    end
-
+    team.remove_players
     team.destroy
     flash[:success] = "Successfully deleted team!"
-    redirect_to user_path(user_id)
+    redirect_to user_path(team.user_id)
   end
 
   private
 
   def team_params
     params.require(:team).permit(:name, :league_id, :user_id)
-  end
-
-  def player_team_help(player, team, user_id)
-    if player.player_teams.include?(team) && authorize_user(user_id)
-      player_league = PlayerLeague.find_by({league_id: team.league.id, player_id: player.id})
-      player_league.destroy
-      player.update(team_id: nil)
-      player.save
-    end
   end
 
 end

@@ -14,5 +14,17 @@ class Team < ActiveRecord::Base
    player.leagues.exclude? league
   end
 
+  def remove_players
+    players.each do |p|
+      player_team_help(p, self)
+    end
+  end
+
+  def player_team_help(player, team)
+    if player.on?(team) && team.user.owns_team?(team)
+      pt = PlayerTeam.find_by({team_id: team.id, player_id: player.id})
+      pt.destroy
+    end
+  end
 
 end

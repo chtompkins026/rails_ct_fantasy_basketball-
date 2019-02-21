@@ -27,6 +27,10 @@ class Player < ActiveRecord::Base
     teams.exclude?(team)
   end
 
+  def on?(team)
+    teams.include?(team)
+  end
+
   def join(team, with:)
     player_teams.create(team_id: team.id, utility: with)
   end
