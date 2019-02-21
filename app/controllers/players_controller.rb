@@ -1,5 +1,4 @@
 class PlayersController < ApplicationController
-
   # before_
 
   def show
@@ -12,20 +11,20 @@ class PlayersController < ApplicationController
   end
 
   def create
-    @team = Team.find(params[:team_id])
-    @player = Player.find(params[:id])
+   @player = Player.find(params[:id])
+   @team = Team.find(params[:team_id])
 
-    if authorize_team(@player, @team) && authorize_user(@team.user_id)
-      player_team = PlayerTeam.create({team_id: @team.id, player_id: @player.id, utility: params[:utility]})
-      redirect_to team_path(@team)
-    elsif !authorize(@team.user_id)
-      flash[:error] = "You Can't Add a Player to a Team That Is Not Yours!"
-      redirect_to league_path(@team.league_id)
-    else
-      flash[:error] = "Can't Add Duplicate Player!"
-      redirect_to team_players_path
-    end
-  end
+   if current_user.owns_team?(@team) && @player.not_on?(@team)
+     @player.join(@team, with: params[:utility]) if @team.in_different_league?(@player)
+     redirect_to team_path(@team)
+   elsif current_user.does_not_own_team?(@team)
+     flash[:error] = "You Can't Add a Player to a Team That Is Not Yours!"
+     redirect_to league_path(@team.league)
+   else
+     flash[:error] = "Can't Add Duplicate Players!"
+     redirect_to team_player_path
+   end
+ end
 
   def destroy
     player = Player.find_by(id: params[:id])

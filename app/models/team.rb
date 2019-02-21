@@ -9,4 +9,10 @@ class Team < ActiveRecord::Base
   validates_uniqueness_of :name, message: "Error - this team name is already taken"
   validates_uniqueness_of :league_id, scope: :user_id, message: "Error - you already have a team in this league"
 
+
+  def in_different_league?(player)
+   player.leagues.exclude? league
+  end
+
+
 end

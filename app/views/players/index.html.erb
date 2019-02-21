@@ -38,7 +38,7 @@
         <td> <%=pl.nba_team %> </td>
         <td> <%= pl.points %> </td>
 
-        <% unless pl.player_teams.pluck(:team_id).include?(@team.id) %>
+        <% if eligibility_check(pl, @team)%>
           <td> <%= button_to "Normal", team_players_path(@team, id: pl.id, league_id: @team.league_id, utility: false)%> </td>
           <td> <%= button_to "Utility", team_players_path(@team, id: pl.id, league_id: @team.league_id, utility: true)%> </td>
         <% else %>

@@ -1,6 +1,8 @@
 class Player < ActiveRecord::Base
+  # TODO: delete player_leagues since it doesnt exist
   has_many :player_leagues
   has_many :leagues, through: :player_leagues
+
   has_many :player_teams
   has_many :teams, through: :player_teams
 
@@ -19,6 +21,18 @@ class Player < ActiveRecord::Base
     else
       Player.all
     end
+  end
+
+  def not_on?(team)
+    teams.exclude?(team)
+  end
+
+  def join(team, with:)
+    player_teams.create(team_id: team.id, utility: with)
+  end
+
+  def leagues
+    teams.map(&:league)
   end
 
 end
