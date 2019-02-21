@@ -41,9 +41,8 @@ class TeamsController < ApplicationController
 
   def destroy
     team = Team.find(params[:id])
-    user_id = team.user_id
     team.players.each do |p|
-      player_league_help(p, team, user_id)
+      player_team_help(p, team, team.user_id)
     end
 
     team.destroy
@@ -57,8 +56,8 @@ class TeamsController < ApplicationController
     params.require(:team).permit(:name, :league_id, :user_id)
   end
 
-  def player_league_help(player, team, user_id)
-    if player.player_leagues.pluck(:league_id).include?(team.league.id) && user_id == current_user.id
+  def player_team_help(player, team, user_id)
+    if player.player_teams.include?(team) && authorize_user(user_id)
       player_league = PlayerLeague.find_by({league_id: team.league.id, player_id: player.id})
       player_league.destroy
       player.update(team_id: nil)

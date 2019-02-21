@@ -5,6 +5,9 @@ class ApplicationController < ActionController::Base
   include PlayersHelper
   include LeaguesHelper
 
+
+  private
+  
   def current_user
     if !session[:user_id].nil? && User.exists?(id: session[:user_id])
       User.find(session[:user_id])
@@ -15,7 +18,7 @@ class ApplicationController < ActionController::Base
   end
 
   def user_check(user_id)
-    current_user.id == user_id ? TRUE : FALSE 
+    current_user.id == user_id ? TRUE : FALSE
   end
 
   def require_login
@@ -32,5 +35,14 @@ class ApplicationController < ActionController::Base
       redirect_to user_path(current_user)
     end
   end
+
+  def authorize_user(user_id)
+    user_id == current_user.id
+  end
+
+  def authorize_team(player,team)
+    player.player_teams.include?(team) ? FALSE : TRUE
+  end
+
 
 end

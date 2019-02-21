@@ -37,13 +37,13 @@
         <td> <%= pl.position %> </td>
         <td> <%=pl.nba_team %> </td>
         <td> <%= pl.points %> </td>
-        <!-- <%= throw pl.player_leagues if pl.id == 2173 %>  -->
-        <% unless pl.player_teams.include?(pl.id) %>
-          <td> <%= button_to "Normal", team_players_path(@team, id: pl.id, league_id: @league_id, utility: false)%> </td>
-          <td> <%= button_to "Utility", team_players_path(@team, id: pl.id, league_id: @league_id, utility: true)%> </td>
+
+        <% unless pl.player_teams.pluck(:team_id).include?(@team.id) %>
+          <td> <%= button_to "Normal", team_players_path(@team, id: pl.id, league_id: @team.league_id, utility: false)%> </td>
+          <td> <%= button_to "Utility", team_players_path(@team, id: pl.id, league_id: @team.league_id, utility: true)%> </td>
         <% else %>
-          <td class="disabled"> Player Not Available </td>
-          <td> </td>
+          <td class="disabled"> Player Is </td>
+          <td class="disabled"> Not Available </td>
         <% end %>
       </tr>
     <%end%>
