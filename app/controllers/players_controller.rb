@@ -30,7 +30,7 @@ class PlayersController < ApplicationController
     player = Player.find_by(id: params[:id])
     team = Team.find_by(id: params[:team_id])
     pt = player.player_teams.find_by(team_id: team.id, player_id: player.id)
-    if authorize_user(team.user_id)
+    if current_user.owns_team?(team)
       pt.delete
       redirect_to team_path(team.id)
     else
